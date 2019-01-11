@@ -2,7 +2,7 @@
 
 NodeJS client-server application.<br/>Based on Express, Socket.IO on server side. And on Socket.IO and PixiJS on client side.
 
-![Drag Racing](screenshots/screenshot-1.jpg)
+![Drag Racing](screenshots/magic-cursor.gif)
 
 ## Installation
 ### Host method

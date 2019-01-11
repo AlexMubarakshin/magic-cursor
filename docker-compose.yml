@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+   application:
+      container_name: magic-cursor
+      build: .
+      ports:
+        - 3000:3000
+      environment:
+        - PORT=3000

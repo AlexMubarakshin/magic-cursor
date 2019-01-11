@@ -4,7 +4,7 @@ const PORT = args['p'] || 8080;
 
 const express = require('express');
 const app = express();
-var server = require('http').Server(app);
+const server = require('http').Server(app);
 const io = require('socket.io').listen(server);
 
 const users = {};
@@ -36,7 +36,6 @@ io.on('connection', (socket) => {
 
         io.emit('disconnect', socket.id);
     });
-
 
     socket.on('cursor-movement', (movementData) => {
         users[socket.id].x = movementData.x;
